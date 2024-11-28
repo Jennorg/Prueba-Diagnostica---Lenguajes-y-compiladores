@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="./src/output.css" rel="stylesheet">
+    <title>Lenguaje y Compiladores</title>
+</head>
+<body class="min-h-screen bg-gray-50 text-gray-800">
+    <!-- Header -->
+    <header class="bg-blue-600 text-white py-4">
+        <h1 class="text-center text-2xl font-bold">Lenguaje y Compiladores</h1>
+    </header>
+
+    <!-- Main Content -->
+    <main class="p-6 space-y-8">
+        <h2 class="text-center text-xl font-semibold text-gray-700">Ejercicios</h2>
+        
+        <!-- Exercise 1 -->
+        <section class="bg-white p-6 rounded-lg shadow-md space-y-4">
+            <h3 class="text-lg font-bold text-gray-700">Ejercicio #1</h3>
+            <p>Dado una cadena M, cuente los números reales de la forma: a) a.bbbb, donde a: es un número entre 1 y 999, y b: entre 0 y 9.</p>
+            <div class="flex items-center gap-4">
+                <input class="flex-1 p-2 border border-gray-300 rounded-md focus:outline-none focus:ring focus:ring-blue-300" type="text" id="input_M" placeholder="Ingrese la cadena M">
+                <button class="px-4 py-2 bg-blue-500 text-white rounded-md hover:bg-blue-600" id="try_btn">Procesar</button>
+            </div>
+            <p class="text-gray-600" id="there_is">Hay: 0</p>
+            <ul id="numbers" class="grid grid-cols-4 gap-2"></ul>
+        </section>
+
+        <!-- Exercise 1.1 -->
+        <section class="bg-white p-6 rounded-lg shadow-md space-y-4">
+            <h3 class="text-lg font-bold text-gray-700">Ejercicio #1.1</h3>
+            <p>Dado una cadena M, cuente los números reales de la forma: a) a.bbbb, donde a: es un número entre 1 y 999, y b: entre 0 y 9.</p>
+            <div class="flex items-center gap-4">
+                <input class="flex-1 p-2 border border-gray-300 rounded-md focus:outline-none focus:ring focus:ring-blue-300" type="text" id="input_M_with_limits" placeholder="Ingrese la cadena M">
+                <button class="px-4 py-2 bg-blue-500 text-white rounded-md hover:bg-blue-600" id="try_btn_with_limits">Procesar</button>
+            </div>
+            <p class="text-gray-600" id="there_is_with_limits">Hay: 0</p>
+            <ul id="numbers_with_limits" class="grid grid-cols-4 gap-2"></ul>
+        </section>
+
+        <!-- Exercise 2 -->
+        <section class="bg-white p-6 rounded-lg shadow-md space-y-4">
+            <h3 class="text-lg font-bold text-gray-700">Ejercicio #2</h3>
+            <p>Implemente la evaluación de expresiones aritméticas considerando los operadores +,-,*,/ y notación científica.</p>
+            <div class="flex items-center gap-4">
+                <input class="flex-1 p-2 border border-gray-300 rounded-md focus:outline-none focus:ring focus:ring-blue-300" type="text" id="expresion" placeholder="Ingrese la expresión aritmética">
+                <button class="px-4 py-2 bg-blue-500 text-white rounded-md hover:bg-blue-600" id="evalue_expresion">Evaluar</button>
+            </div>
+            <p class="text-gray-600" id="evalued_expresion"></p>
+        </section>
+
+        <!-- Exercise 3 -->
+        <section class="bg-white p-6 rounded-lg shadow-md space-y-4">
+            <h3 class="text-lg font-bold text-gray-700">Ejercicio #3</h3>
+            <p>Dado una cadena C con un programa en un lenguaje L, indique la cantidad de palabras reservadas en C según la cadena E.</p>
+            <div class="flex flex-wrap items-center gap-4">
+                <input class="flex-1 p-2 border border-gray-300 rounded-md focus:outline-none focus:ring focus:ring-blue-300" type="text" id="C" placeholder="Cadena C">
+                <input class="flex-1 p-2 border border-gray-300 rounded-md focus:outline-none focus:ring focus:ring-blue-300" type="text" id="E" placeholder="Cadena E">
+                <button class="px-4 py-2 bg-blue-500 text-white rounded-md hover:bg-blue-600" id="try">Procesar</button>
+            </div>
+            <p class="text-gray-600" id="output"></p>
+        </section>
+    </main>
+
+    <!-- Footer -->
+    <footer class="bg-gray-200 py-4 text-center text-gray-600">
+        &copy; 2024 Jenfer Martinez - V30.577.104
+    </footer>
+
+    <script src="src/funtions.js"></script>
+    <script src="src/index.js"></script>
+</body>
+</html>
